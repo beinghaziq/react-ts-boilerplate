@@ -1,23 +1,22 @@
-// src/routes/router.tsx
 import { createBrowserRouter } from 'react-router-dom';
-import { Layout } from '@components/common/Layout';
-import { HomePage } from '@pages/HomePage';
-import { LoginPage } from '@pages/LoginPage';
-import { DashboardPage } from '@pages/DashboardPage';
-import { ProtectedRoute } from '@components/common/ProtectedRoute';
+import { ProtectedRoute } from '../common/components/ProtectedRoute';
+import { LoginPage } from '../pages/LoginPage';
+import { DashboardPage } from '../pages/DashboardPage';
+import { HomePage } from '../pages/HomePage';
+import { Layout } from '../common/components/Layout';
 
 export const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
     children: [
-      {
-        index: true,
-        element: <HomePage />,
+      { 
+        index: true, 
+        element: <HomePage /> 
       },
-      {
-        path: 'login',
-        element: <LoginPage />,
+      { 
+        path: 'login', 
+        element: <LoginPage /> 
       },
       {
         path: 'dashboard',
