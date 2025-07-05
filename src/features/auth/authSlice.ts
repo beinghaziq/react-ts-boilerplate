@@ -1,10 +1,5 @@
-// src/features/auth/authSlice.ts
 import { createSlice } from '@reduxjs/toolkit';
-
-interface AuthState {
-  user: null | { id: string; name: string; email: string };
-  token: string | null;
-}
+import { AuthState } from './types/auth';
 
 const initialState: AuthState = {
   user: null,
