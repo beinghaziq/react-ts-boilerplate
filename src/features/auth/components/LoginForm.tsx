@@ -15,7 +15,7 @@ export const LoginForm = () => {
 
     try {
       await login(credentials).unwrap();
-      navigate('/dashboard'); // Redirect on success
+      navigate('/dashboard');
     } catch (err) {
       console.error('Login failed:', err);
     }
@@ -23,7 +23,6 @@ export const LoginForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
-      {/* Your existing form fields */}
       <div>
         <button
           type="submit"
