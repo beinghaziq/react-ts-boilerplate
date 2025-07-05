@@ -1,5 +1,14 @@
 # React + TypeScript + Vite
+This project is a boiler plate for a react js project. Which follows modular approach.
 
+## Build With
+
+- React JS
+- TailwindCss
+- RTKQury
+
+## Folder structure
+```
 src/
 ├── app/                   # Core application setup
 │   ├── hooks.ts           # Redux hooks
@@ -24,3 +33,4 @@ src/
 ├── styles/               # Global styles
 ├── App.tsx
 └── main.tsx
+```
