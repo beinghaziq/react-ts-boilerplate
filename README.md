@@ -4,6 +4,8 @@ This project is a boiler plate for a react js project. Which follows modular app
 ## Build With
 
 - React JS
+- Vite
+- Typescript
 - TailwindCss
 - RTKQury
 
